@@ -1,9 +1,12 @@
 .user-container {
     text-align: center;
+
 }
 
 .user-tile {
     background-color: #dfe6e9;
     margin: 5vh;
     text-align: center;
+    padding: 5vh;
 }
+

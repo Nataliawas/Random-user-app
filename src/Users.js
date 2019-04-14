@@ -38,12 +38,15 @@ class Users extends Component {
 
                 {this.state.users.map(user => (
 
-                    <div key={user.id} className = "user-tile">
-                        <img src={user.pic} alt="man from randomuserme" />
-                        <div>Imię: {user.name}</div>
-                        <div>Nazwisko: {user.lastName}</div>
-                        <div>E-mail: {user.mail}</div>
-
+                    <div key={user.id} className="user-tile">
+                        <div clasName="img-container">
+                            <img src={user.pic} alt="man from randomuserme" />
+                        </div>
+                        <div className="data-container">
+                            <div>Imię: {user.name}</div>
+                            <div>Nazwisko: {user.lastName}</div>
+                            <div>E-mail: {user.mail}</div>
+                        </div>
                     </div>
 
 
