@@ -18,17 +18,17 @@ class Users extends Component {
                 console.log('data', data)
                 console.log('results', data.results)
                 users.push(...data.results)
+                this.setState({ users })
             })
 
         console.log('users', users)
-        this.setState({ users })
+
         console.log('state', this.state.users)
     }
 
 
 
     renderUsers = () => {
-
         return this.state.users.map(user => (
 
             <div key={Math.random() * Math.random()} className="user-tile">
@@ -41,6 +41,7 @@ class Users extends Component {
                     <div>E-mail: {user.email}</div>
                 </div>
             </div>
+           
         ))
     }
 
