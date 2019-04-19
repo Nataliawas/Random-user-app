@@ -33,7 +33,7 @@ class Users extends Component {
 
             <div key={Math.random() * Math.random()} className="user-tile">
                 <div clasName="img-container">
-                    <img src={user.pic} alt="man from randomuserme" />
+                    <img src={user.picture.large} alt="man from randomuserme" />
                 </div>
                 <div className="data-container">
                     <div>Imię: {user.name.first}</div>
