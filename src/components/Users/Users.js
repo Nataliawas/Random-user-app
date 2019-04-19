@@ -58,7 +58,7 @@ class Users extends Component {
         return (
             <div>
                 <div className="button-container">
-                    <button type="button" onClick={this.renderUsers}>RENDER USERS</button>
+                    <button type="button" onClick={this.fetchUsers}>RENDER USERS</button>
                 </div>
                 <div>
                     {this.renderUsers()}
