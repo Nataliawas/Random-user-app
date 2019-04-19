@@ -22,7 +22,7 @@ class Users extends Component {
 
         console.log('users', users)
         this.setState({ users })
-        console.log('state', this.state)
+        console.log('state', this.state.users)
     }
 
 
@@ -32,7 +32,7 @@ class Users extends Component {
         return this.state.users.map(user => (
 
             <div key={Math.random() * Math.random()} className="user-tile">
-                <div clasName="img-container">
+                <div className="img-container">
                     <img src={user.picture.large} alt="man from randomuserme" />
                 </div>
                 <div className="data-container">
@@ -41,8 +41,6 @@ class Users extends Component {
                     <div>E-mail: {user.email}</div>
                 </div>
             </div>
-
-
         ))
     }
 
